@@ -1,0 +1,28 @@
+http 49.151.204.225:8082 # Philippines
+http 103.94.126.250:8080 # Indonesia
+http 38.252.222.53:999 # Peru
+http 27.147.195.170:58080 # Bangladesh
+http 190.61.55.19:999 # Colombia
+http 181.37.240.89:999 # Dominican Republic
+http 23.143.160.193:999 # Puerto Rico
+http 191.252.204.220:8080 # Brazil
+http 103.158.11.9:32650 # Bangladesh
+http 103.255.109.144:1111 # Indonesia
+http 27.72.100.236:4995 # Vietnam
+http 203.172.225.227:8080 # Thailand
+http 181.174.231.30:9992 # Colombia
+http 77.242.177.57:3128 # Italy
+http 14.143.130.210:80 # India
+http 177.68.149.122:8080 # Brazil
+http 157.230.49.238:3128 # United States
+http 4.157.159.111:80 # United States
+http 103.169.187.229:8080 # Indonesia
+http 38.172.131.64:999 # Peru
+http 182.253.110.130:8080 # Indonesia
+http 202.61.120.182:8080 # India
+http 197.248.86.237:32650 # Kenya
+http 157.66.50.61:8080 # Indonesia
+http 115.147.16.205:5050 # Philippines
+http 103.250.70.190:1515 # Bangladesh
+http 45.70.236.194:999 # Ecuador
+http 14.142.36.210:80 # India

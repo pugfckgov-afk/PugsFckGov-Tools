@@ -1,0 +1,83 @@
+# Lista de proxies fornecida
+proxies_list = [
+    {"ip": "49.151.204.225", "port": "8082", "type": "http", "anon": "NOA", "country": "Philippines"},
+    {"ip": "103.94.126.250", "port": "8080", "type": "http", "anon": "NOA", "country": "Indonesia"},
+    {"ip": "38.252.222.53", "port": "999", "type": "http", "anon": "NOA", "country": "Peru"},
+    {"ip": "27.147.195.170", "port": "58080", "type": "http", "anon": "NOA", "country": "Bangladesh"},
+    {"ip": "190.61.55.19", "port": "999", "type": "http", "anon": "NOA", "country": "Colombia"},
+    {"ip": "181.37.240.89", "port": "999", "type": "http", "anon": "NOA", "country": "Dominican Republic"},
+    {"ip": "23.143.160.193", "port": "999", "type": "http", "anon": "NOA", "country": "Puerto Rico"},
+    {"ip": "191.252.204.220", "port": "8080", "type": "http", "anon": "ANM", "country": "Brazil"},
+    {"ip": "103.158.11.9", "port": "32650", "type": "http", "anon": "NOA", "country": "Bangladesh"},
+    {"ip": "103.255.109.144", "port": "1111", "type": "http", "anon": "NOA", "country": "Indonesia"},
+    {"ip": "27.72.100.236", "port": "4995", "type": "http", "anon": "NOA", "country": "Vietnam"},
+    {"ip": "203.172.225.227", "port": "8080", "type": "http", "anon": "NOA", "country": "Thailand"},
+    {"ip": "181.174.231.30", "port": "9992", "type": "http", "anon": "NOA", "country": "Colombia"},
+    {"ip": "77.242.177.57", "port": "3128", "type": "http", "anon": "ANM", "country": "Italy"},
+    {"ip": "14.143.130.210", "port": "80", "type": "http", "anon": "NOA", "country": "India"},
+    {"ip": "177.68.149.122", "port": "8080", "type": "http", "anon": "NOA", "country": "Brazil"},
+    {"ip": "157.230.49.238", "port": "3128", "type": "http", "anon": "HIA", "country": "United States"},
+    {"ip": "4.157.159.111", "port": "80", "type": "http", "anon": "ANM", "country": "United States"},
+    {"ip": "103.169.187.229", "port": "8080", "type": "http", "anon": "NOA", "country": "Indonesia"},
+    {"ip": "38.172.131.64", "port": "999", "type": "http", "anon": "NOA", "country": "Peru"},
+    {"ip": "182.253.110.130", "port": "8080", "type": "http", "anon": "NOA", "country": "Indonesia"},
+    {"ip": "202.61.120.182", "port": "8080", "type": "http", "anon": "NOA", "country": "India"},
+    {"ip": "197.248.86.237", "port": "32650", "type": "http", "anon": "HIA", "country": "Kenya"},
+    {"ip": "157.66.50.61", "port": "8080", "type": "http", "anon": "NOA", "country": "Indonesia"},
+    {"ip": "115.147.16.205", "port": "5050", "type": "http", "anon": "NOA", "country": "Philippines"},
+    {"ip": "103.250.70.190", "port": "1515", "type": "http", "anon": "NOA", "country": "Bangladesh"},
+    {"ip": "45.70.236.194", "port": "999", "type": "http", "anon": "NOA", "country": "Ecuador"},
+    {"ip": "14.142.36.210", "port": "80", "type": "http", "anon": "NOA", "country": "India"}
+]
+
+# Lista de módulos (substitui vulnerabilidades)
+modules = [
+    {
+        "name": "Port Scanning",
+        "desc": "Escaneia portas abertas em um IP ou domínio.",
+        "tool": "Nmap",
+        "install_cmd": ["apt", "install", "-y", "nmap"],
+        "run_func": "scan_port",
+        "input_type": "IP ou domínio",
+    },
+    {
+        "name": "Web Vulnerability Scanning",
+        "desc": "Escaneia vulnerabilidades em sites com Nikto.",
+        "tool": "Nikto",
+        "install_cmd": ["apt", "install", "-y", "nikto"],
+        "run_func": "scan_vuln_nikto",
+        "input_type": "URL",
+    },
+    {
+        "name": "OSINT Whois",
+        "desc": "Coleta informações whois de um domínio.",
+        "tool": "Whois",
+        "install_cmd": ["apt", "install", "-y", "whois"],
+        "run_func": "whois_lookup",
+        "input_type": "Domínio",
+    },
+    {
+        "name": "Hash Cracking",
+        "desc": "Tenta crackear hashes com Hashcat.",
+        "tool": "Hashcat",
+        "install_cmd": ["apt", "install", "-y", "hashcat"],
+        "run_func": "hash_crack",
+        "input_type": "Hash",
+    },
+    {
+        "name": "Vulnerability Viewer",
+        "desc": "Escaneia vulnerabilidades web com OWASP ZAP.",
+        "tool": "OWASP ZAP",
+        "install_cmd": ["apt", "install", "-y", "zaproxy"],
+        "run_func": "zap_scan",
+        "input_type": "URL",
+    },
+    {
+        "name": "Anonize",
+        "desc": "Configura anonimato com Proxychains e proxies.",
+        "tool": "Proxychains",
+        "install_cmd": ["apt", "install", "-y", "proxychains"],
+        "run_func": "setup_proxychains",
+        "input_type": "Nenhum (configura proxy)",
+    }
+]
